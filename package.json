@@ -1,0 +1,33 @@
+{
+  "name": "xcode-translator",
+  "version": "1.0.0",
+  "description": "Herramienta para traducir automáticamente strings faltantes en archivos de localización de Xcode",
+  "main": "xcode-translator.js",
+  "scripts": {
+    "start": "node xcode-translator.js",
+    "translate": "node xcode-translator.js",
+    "translate:mock": "node xcode-translator.js --mock",
+    "translate:deepl": "node xcode-translator.js --service=deepl",
+    "translate:verbose": "node xcode-translator.js --verbose",
+    "test": "node xcode-translator.js --input=test.xcstrings --mock --verbose"
+  },
+  "keywords": [
+    "xcode",
+    "ios",
+    "localization",
+    "translation",
+    "i18n",
+    "swift",
+    "strings"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.2",
+    "dotenv": "^16.3.1",
+    "yargs": "^17.7.2"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  }
+}
